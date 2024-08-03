@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <title>Room homepage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <button onclick="openNav()">
+      <img src="./images/icon-hamburger.svg" alt="Open Menu" class="hamburger-btn">
+    </button>
+    <img class="logo" src="./images/logo.svg" alt="Logo">
+
+    <ul id="nav" class="nav-list">
+      <button id="closeBtn" onclick="closeNav()">
+        <img src="./images/icon-close.svg" alt="Close Menu">
+      </button>
+      <li>Home</li>
+      <li>Shop</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+  <div class="overlay"></div>
+
+  <main>
+    <div class="hero-section">
+      <img class="hero-image" id="img-1" src="./images/desktop-image-hero-1.jpg" alt="Hero Image">
+      <div class="navigation-arrows">
+        <span onclick="previous()">
+          <img src="./images/icon-angle-left.svg" alt="Previous" class="arrow">
+        </span>
+        <span onclick="next()">
+          <img src="./images/icon-angle-right.svg" alt="Next" class="arrow">
+        </span>
+      </div>
+    </div>
+
+    <div class="content-section scale-in-top">
+      <h1 id="heading"></h1>
+      <p id="content"></p>
+      <h4>
+        Shop Now <img src="./images/icon-arrow.svg" alt="Shop Now">
+      </h4>
+      <div class="content-navigation-arrows">
+        <span onclick="previous()">
+          <img src="./images/icon-angle-left.svg" alt="Previous" class="arrow">
+        </span>
+        <span onclick="next()">
+          <img src="./images/icon-angle-right.svg" alt="Next" class="arrow">
+        </span>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <div class="about-image-container">
+        <img class="about-image flip-in-ver-right" src="./images/image-about-dark.jpg" alt="About Image Dark">
+      </div>
+      <div class="about-content scale-in-top">
+        <h3>About our furniture</h3>
+        <p>
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best expresses your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+        <h4>
+          Shop Now <img src="./images/icon-arrow.svg" alt="Shop Now">
+        </h4>
+      </div>
+      <div class="about-image-container">
+        <img src="./images/image-about-light.jpg" alt="About Image Light" class="about-image flip-in-ver-right">
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
